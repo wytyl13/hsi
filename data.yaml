@@ -1,0 +1,8 @@
+train: alsi_seg_202606111647_v5/images/train
+val: alsi_seg_202606111647_v5/images/val
+
+# 类别数量
+nc: 3
+
+# 类别名称 (对于你的架构，YOLO只需要知道这是不是石头，不需要分硅和铝，分矿交给后面的 GMM)
+names: ["l", "g", "m"]

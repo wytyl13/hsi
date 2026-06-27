@@ -1,0 +1,16 @@
+runs/
+alsi_seg_20260427_v1/
+alsi_seg_20260519_v1/
+alsi_seg_20260523_v2/
+alsi_seg_20260523_v3/
+alsi_seg_202606111136_v4/
+alsi_seg_202606111647_v5/
+local_hsi_output/
+project-13-at-2026-05-23-06-50-aa7c4f4b/
+project-13-at-2026-06-09-03-04-f8b6c116/
+project-13-at-2026-06-11-03-33-1119baaa/
+project-13-at-2026-06-11-08-45-5d6e60b0/
+__pycache__/
+*.zip
+*.pth
+*.pt
