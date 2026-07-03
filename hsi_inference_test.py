@@ -26,10 +26,11 @@ import requests
 import numpy as np
 import spectral.io.envi as envi
 from ultralytics import YOLO
-
+# (44, 63, 88)
+# (150, 100, 50)
 class HSIEdgeProcessor:
     def __init__(self, yolo_weights, api_url, crop_height=480, crop_width=640,
-                 rgb_bands=(44, 63, 88), expected_bands=104,
+                 rgb_bands=(150, 100, 50), expected_bands=204,
                  yolo_gains=(7000.0, 7000.0, 7000.0),
                  conf_thresh=0.3, iou_thresh=0.45, min_particle_area=10, belt_margin=50):
         # ==========================================================
@@ -498,12 +499,15 @@ if __name__ == "__main__":
     
     # 本地高光谱数据目录
     # INPUT_DIR = r"F:\capture"
-    INPUT_DIR = r"F:\capture_small_pl_20_20260627"
+    # INPUT_DIR = r"F:\capture_small_pl_20_20260627"
+    # INPUT_DIR = r"F:\weiyutao\compare_20260627"
+    INPUT_DIR = r"F:\weiyutao\202620630_spe"
     # INPUT_DIR = r"F:\weiyutao\work\data\hsi\data_0612_new"
     
     # 批次名称
     # BATCH_NAME = "平陆一诺铝土矿500num20260527"
-    BATCH_NAME = "平陆一诺铝土矿20num_small_20260627"
+    # BATCH_NAME = "平陆一诺铝土矿10_big_num_small_20260627174239"
+    BATCH_NAME = "平陆一诺铝土矿20_big_num_small_202606301113"
 
     # 初始化处理引擎
     # ⚠️ 增益单位换算: 在线分选喂【原始 DN】, 用 gain=7000; 这里 .spe 是【反射率】(float32,
